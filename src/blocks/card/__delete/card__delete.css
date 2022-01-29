@@ -1,0 +1,12 @@
+.card__delete {
+  background: transparent center url(../../../images/btn_delete.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 18px;
+  height: 19px;
+  border: none;
+  transition: .4s;
+  /* display: none; */
+}

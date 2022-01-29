@@ -1,0 +1,14 @@
+.popup__content {
+  /* outline: 1px solid red; */
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  max-width: 358px;
+
+}
+
+@media (max-width: 767px) {
+  .popup__content {
+    width: 238px;
+  }
+}
