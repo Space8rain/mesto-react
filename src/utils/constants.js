@@ -1,13 +1,3 @@
-export const forms = {
-  formSelector: '.popup__form',
-  inputSelector: '.popup__input',
-  submitButtonSelector: '.popup__btn-save',
-  inactiveButtonClass: 'popup__btn_disable',
-  inputErrorClass: 'popup__input_type_error',
-  errorClass: 'popup__error_visible'
-};
-
-
 export const popupProfile = document.querySelector('.popup_type_profile');
 export const formPopupProfile = popupProfile.querySelector('.form');
 export const nameInput = popupProfile.querySelector('#newName');

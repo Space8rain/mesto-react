@@ -8,6 +8,8 @@ function Main({ onEditAvatar, onEditProfile, onAddPlace, onCardClick }) {
   const [userDescription, setUserDescription] = React.useState('')
   const [userAvatar, setUserAvatar] = React.useState('')
 
+  const [cards, setCards] = React.useState([])
+
   React.useEffect(() => {
     api.getProfile()
       .then((data) => {
@@ -18,9 +20,7 @@ function Main({ onEditAvatar, onEditProfile, onAddPlace, onCardClick }) {
       .catch((err) => {
         console.log(err)
       })
-  })
-
-  const [cards, setCards] = React.useState([])
+  }, [])
 
   React.useEffect(() => {
     api.getInitialCards()
@@ -36,7 +36,7 @@ function Main({ onEditAvatar, onEditProfile, onAddPlace, onCardClick }) {
       .catch((err) => {
         console.log(err)
       })
-  })
+  }, [])
 
   return (
     <main>
