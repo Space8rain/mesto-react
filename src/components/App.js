@@ -66,6 +66,9 @@ function App() {
     .then((newCard) => {
         setCards((state) => state.map((c) => c._id === card._id ? newCard : c))
     })
+    .catch((err) => {
+      console.log(err)
+    })
   }
 
   // Удаление карточки и возвращения массива без нее
@@ -73,6 +76,9 @@ function App() {
     api.deleteUserCard(card._id)
       .then(() => {
       setCards((cards) => cards.filter((c) => c._id !== card._id))
+    })
+    .catch((err) => {
+      console.log(err)
     })
   }
 
