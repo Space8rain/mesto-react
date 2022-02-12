@@ -1,3 +1,14 @@
 .card__like_active {
   background-image: url(../../../../images/btn_like_active.png);
+  background-color: #FFF;
+  background-repeat: no-repeat;
+  width: 22px;
+  height: 19px;
+  border: none;
+  transition: .4s;
+}
+
+.card__like_active:hover {
+  cursor: pointer;
+  opacity: .5;
 }

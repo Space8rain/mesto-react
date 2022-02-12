@@ -93,6 +93,14 @@ class Api {
     .then(this._checkResponse)
   }
 
+  changeLikeCardStatus(id, isLiked) {
+    return fetch (`${this._url}cards/${id}/likes`, {
+      method: `${isLiked ? 'PUT' : 'DELETE'}`,
+      headers: this._headers,
+    })
+    .then(this._checkResponse)
+  }
+
   // Получение всех данных от сервера
   getApiInfo() {
     return Promise.all([this.getInitialCards(), this.getProfile()])
